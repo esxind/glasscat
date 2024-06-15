@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$Bobu </title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="/images/Bobu.png" />
+</head>
+
+<body>
+
+    <div class="fixed-navbar">
+        <div class="left">
+            <a href="./index.html" class="logo"><img src="./images/hero-logo.png" alt=""></a>
+        </div>
+        <div class="right">
+            <div class="social-links">
+                 <a href="https://t.me/+cOSyd7WHx5Q2MmE0" target="_blank" rel="noreferrer">
+                    <img src="./images/telegram.png" alt="">
+                </a>
+                <a href="https://pump.fun/board"_blank rel="noreferrer">
+                    <img src="./images/dex.png" alt="">
+                </a>
+                <a href="https://x.com/GlassCat_sol" target="_blank" rel="noreferrer">
+                    <img src="./images/twitter.png" alt="">
+                </a>
+                <a href="https://dexscreener.com/solana/" target="_blank" rel="noreferrer">
+                    <img src="./images/eagle.png" alt="">
+                </a>
+            </div>
+
+            <div class="buttons">
+                <a href="https://pump.fun/" id="header-buy-link" target="_blank" rel="noreferrer">
+                    buy $Glasscat
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <a class="hero-image" href="#" id="click-to-buy">
+            <img src="./images/3.jpg" alt="">
+        </a>
+        <div class="copy-area">
+            <span>
+                CA: <span id="copy-text"></span>
+            </span>
+            <button id="copy-button">
+                <img src="./images/copy.png" alt="">
+            </button>
+        </div>
+
+    </div>
+    <div class="hero-bottom">
+
+
+        <div class="purpose">
+            <div class="left">
+                <h1>
+                    Purpose:
+                </h1>
+                <p>
+                    Glasscat recensse all cats wearing glasses or contacts
+                </p>
+                <p>
+                    we buy coin for Glasscat, thats it
+                </p>
+            </div>
+            <div class="right">
+                <img src="./images/1.png" alt="">
+            </div>
+        </div>
+
+        <div class="support-us">
+
+
+            <div class="footer">
+                <div class="buttons">
+                    <a href="" id="support-to-cause" target="_blank" rel="noreferrer">
+                        buy $Glasscat
+                    </a>
+                    <div>
+                        <a href="#" id="support-to-cause" class="disabled">
+                            Glasscat MEME MAKER
+                        </a>
+                        <span>
+                            Soon
+                        </span>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="https://t.me/+cOSyd7WHx5Q2MmE0"_blank" rel="noreferrer">
+                        <img src="./images/footer-telegram.png" alt="">
+                    </a>
+                    <a href="https://www.pump.fun" target="_blank" rel="noreferrer">
+                        <img src="./images/footer-pump-fun.png" alt="">
+                    </a>
+                    <a href="https://dexscreener.com/solana/" target="_blank" rel="noreferrer">
+                        <img src="./images/footer-chart.png" alt="">
+                    </a>
+                    <a href="https://x.com/GlassCat_sol" target="_blank" rel="noreferrer">
+                        <img src="./images/footer-twitter.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('copy-button').addEventListener('click', function () {
+            const textToCopy = document.getElementById('copy-text').textContent;
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = textToCopy;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+
+        });
+    </script>
+
+</body>
+
+</html>
